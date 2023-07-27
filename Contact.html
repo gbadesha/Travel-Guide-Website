@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h4>Navigate To:-</h4>
+        <ul>
+            <li><a href="/Home.html">Home</a></li>
+            <li><a href="/Attractions.html">Attractions</a></li>
+            <li><a href="/About.html">About</a></li>
+        </ul>
+    
+    </nav>
+    <section class="form">
+        <h2>User Info</h2>
+    <!--HTML FORMS-->
+    <form action="https://httpbin.org/post" method="post">
+        <label for="name" >NAME:-</label>
+        <input type="text" name="name" id="name" requied autofocus="name"/>
+        <br><br>
+        <label for="lastname">LAST NAME:-</label>
+        <input type="text" name="lastname"  id="lastname" required placeholder="last name"/>
+        <label for="age">AGE</label>
+        <input type="number" name="age" id="age" placeholder="age"/>
+        <br/><br/>
+        <label for="phone">PHONE:-</label>
+        <input type="tel" name="phone" id="phone" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="phone"/>
+        <br><br>
+        <label for="email">EMAIL:-</label>
+        <input type="email" name="email" id="email" required autofocus placeholder="email"/>
+        <br/><br />
+        <label for="password">PASSWORD:-</label>
+        <input type="password" name="password" id="password" required autofocus placeholder="password"/>
+        <br /><br />
+        <label for="rememberpassword">Remember Password  </label>
+        <input type="checkbox" name="rememberpassword" id="rememberpassword"/>
+        
+        <section class="newletter">
+            <h5>Optional subscription for monthly newsletter:</h5>
+            <label for="newsletter">Newsletter Subscription  <input type="checkbox" value="" name="newsletter" 
+                id="newsletter"/>
+               </label>
+            
+        </section>
+        
+           
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    
+</section>
+</body>
+</html>
